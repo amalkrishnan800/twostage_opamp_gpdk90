@@ -1,7 +1,7 @@
 # Two-Stage-Miller-Compensated-CMOS-Op-Amp
 Transistor-level design of a 1.2 V two-stage Miller-compensated operational amplifier in 90 nm CMOS (Cadence GPDK090). Devices are sized with the gm/ID methodology instead of square-law hand calculations, because of short-channel effects at this node. Designed and simulated in Cadence Virtuoso (ADE L, ADE XL, Spectre).
 
-Course: <electronics and communication engenineering, indian institute of information technology kottayam>
+Course: <electronics and communication engineering, indian institute of information technology kottayam >
 Name / Roll Number: <2025bec0006>
 
 ## Specifications and Results
@@ -74,6 +74,12 @@ Input common mode must keep the tail in saturation: VICM ≥ Vgs(pair) + Vdsat(N
 ![AC response at NN corner](images/ac_nn.png)
 *Open-loop response at NN: DC gain 60.87 dB, UGB 43.10 MHz, phase at UGB −112.82°, so PM ≈ 67.2°.*
 
+![AC response at SS corner](images/ac_ss.png)
+*Open-loop response at SS (125 °C): DC gain 59.89 dB, UGB 26.91 MHz, phase at UGB −116.9°, so PM ≈ 63°.*
+
+![AC response at FF corner](images/ac_ff.png)
+*Open-loop response at FF (−40 °C): DC gain 60.17 dB, UGB 63.70 MHz, phase at UGB −106.8°, so PM ≈ 73°.*
+
 ### Transient slew rate (NN, 27 °C)
 
 ![Transient response at NN corner](images/tran_nn.png)
@@ -86,6 +92,12 @@ Unity-gain buffer, CL = 1 pF, output stepping 0.6 V to 1.0 V. Slew rate measured
 | Falling | 7.26 ns | 35.8 V/µs |
 
 The falling edge shows a small undershoot that settles back to 0.6 V.
+
+![Transient response at SS corner](images/tran_ss.png)
+*Unity-gain buffer step response at SS (125 °C): rise about 22.5 V/µs, fall about 29.4 V/µs.*
+
+![Transient response at FF corner](images/tran_ff.png)
+*Unity-gain buffer step response at FF (−40 °C): rise about 38.6 V/µs, fall about 40.6 V/µs.*
 
 ### Corner Results
 
@@ -133,7 +145,11 @@ An early AC run showed 97 MHz UGB and about −2° phase margin. This was traced
 └── images/
     ├── schematic.png
     ├── ac_nn.png
-    └── tran_nn.png
+    ├── ac_ss.png
+    ├── ac_ff.png
+    ├── tran_nn.png
+    ├── tran_ss.png
+    └── tran_ff.png
 ```
 
 ---
