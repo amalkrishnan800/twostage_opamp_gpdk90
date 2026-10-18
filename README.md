@@ -177,3 +177,4 @@ An early AC run showed 97 MHz UGB and about −2° phase margin. This was traced
 - ## References
 
 1. P. E. Allen and D. R. Holberg, *CMOS Analog Circuit Design*, Oxford University Press. Reference text for the two-stage op-amp topology, Miller compensation, pole splitting and the nulling resistor.
+2. P. G. A. Jespers and B. Murmann, *Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables*, Cambridge University Press, 2017. Reference text for the gm/ID design methodology.
