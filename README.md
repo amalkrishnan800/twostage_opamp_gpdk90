@@ -171,3 +171,9 @@ An early AC run showed 97 MHz UGB and about −2° phase margin. This was traced
 
 - **PDK not included.** GPDK090 is Cadence's proprietary academic PDK. Only result plots are in this repo, and a licensed GPDK090 install is required to re-run the simulations.
 - Power is estimated from the design currents (20 µA tail + 80 µA second stage + 20 µA bias branch, at 1.2 V).
+
+---
+
+- ## References
+
+1. P. E. Allen and D. R. Holberg, *CMOS Analog Circuit Design*, Oxford University Press. Reference text for the two-stage op-amp topology, Miller compensation, pole splitting and the nulling resistor.
